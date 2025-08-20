@@ -20,7 +20,7 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-br from-[#f8ede3] via-[#f5e6ca] to-[#e4c59e] flex flex-col">
       {/* Navigation Bar */}
       <nav className="w-full flex justify-between items-center px-8 py-4 bg-white/80 shadow-sm sticky top-0 z-20">
-        <span className="text-2xl font-bold text-[#7c5e3c] tracking-wide">Aesthetic Brew</span>
+  <span className="text-2xl font-bold text-[#7c5e3c] tracking-wide">Calle Aroma</span>
         <div className="space-x-6">
           <Link href="/home" className="text-[#7c5e3c] font-medium hover:underline">Home</Link>
           <Link href="/menu" className="text-[#7c5e3c] font-medium hover:underline">Menu</Link>
@@ -33,7 +33,7 @@ export default function Home() {
       <section className="relative h-[420px] flex items-center justify-center bg-cover bg-center rounded-b-3xl shadow-lg mx-2 mt-2" style={{backgroundImage: 'url(/coffee-hero.jpg)'}}>
         <div className="absolute inset-0 bg-gradient-to-t from-[#7c5e3c]/80 to-transparent rounded-b-3xl" />
         <div className="relative z-10 text-center text-white px-4">
-          <h1 className="text-6xl font-extrabold mb-4 drop-shadow-lg tracking-tight font-serif">Aesthetic Brew</h1>
+          <h1 className="text-6xl font-extrabold mb-4 drop-shadow-lg tracking-tight font-serif">Calle Aroma</h1>
           <p className="text-2xl mb-8 drop-shadow font-light">Where every cup is a work of art</p>
           <Link href="/menu">
             <button className="bg-[#e4c59e] hover:bg-[#d2b48c] text-[#7c5e3c] font-bold px-10 py-4 rounded-full shadow-xl text-lg transition-all duration-200">Explore Menu</button>
@@ -82,7 +82,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="w-full text-center py-6 bg-white/80 text-[#a68a64] font-medium tracking-wide shadow-inner mt-auto">
-        &copy; {new Date().getFullYear()} Aesthetic Brew. All rights reserved.
+  &copy; {new Date().getFullYear()} Calle Aroma. All rights reserved.
       </footer>
     </main>
   );

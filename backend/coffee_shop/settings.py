@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "menu",# Custom app for menu management
-    "gallery",# Custom app for gallery management
+    # "gallery", # Custom app for gallery management
     "rest_framework",  # Django REST Framework for API development
     "corsheaders",  # For handling CORS
 ]
