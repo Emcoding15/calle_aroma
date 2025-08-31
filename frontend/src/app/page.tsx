@@ -20,11 +20,10 @@ export default function Home() {
     <main className="min-h-screen bg-gradient-to-br from-[#f8ede3] via-[#f5e6ca] to-[#e4c59e] flex flex-col">
       {/* Navigation Bar */}
       <nav className="w-full flex justify-between items-center px-8 py-4 bg-white/80 shadow-sm sticky top-0 z-20">
-  <span className="text-2xl font-bold text-[#7c5e3c] tracking-wide">Calle Aroma</span>
+        <span className="text-2xl font-bold text-[#7c5e3c] tracking-wide">Calle Aroma</span>
         <div className="space-x-6">
-          <Link href="/home" className="text-[#7c5e3c] font-medium hover:underline">Home</Link>
+          <Link href="/" className="text-[#7c5e3c] font-medium hover:underline">Home</Link>
           <Link href="/menu" className="text-[#7c5e3c] font-medium hover:underline">Menu</Link>
-          <Link href="/gallery" className="text-[#7c5e3c] font-medium hover:underline">Gallery</Link>
           <Link href="/contact" className="text-[#7c5e3c] font-medium hover:underline">Contact</Link>
         </div>
       </nav>
