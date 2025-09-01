@@ -34,9 +34,12 @@ export default function Home() {
         <div className="relative z-10 text-center text-white px-4">
           <h1 className="text-6xl font-extrabold mb-4 drop-shadow-lg tracking-tight font-serif">Calle Aroma</h1>
           <p className="text-2xl mb-8 drop-shadow font-light">Where every cup is a work of art</p>
-          <Link href="/menu">
-            <button className="bg-[#e4c59e] hover:bg-[#d2b48c] text-[#7c5e3c] font-bold px-10 py-4 rounded-full shadow-xl text-lg transition-all duration-200">Explore Menu</button>
-          </Link>
+          <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
+            <Link href="/menu">
+              <button className="bg-[#e4c59e] hover:bg-[#d2b48c] text-[#7c5e3c] font-bold px-10 py-4 rounded-full shadow-xl text-lg transition-all duration-200">Explore Menu</button>
+            </Link>
+            <button className="bg-[#7c5e3c] hover:bg-[#a68a64] text-white font-bold px-10 py-4 rounded-full shadow-xl text-lg transition-all duration-200">Order Now</button>
+          </div>
         </div>
       </section>
 
