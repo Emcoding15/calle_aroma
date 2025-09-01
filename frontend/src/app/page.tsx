@@ -1,21 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
 import Image from "next/image";
 import Link from "next/link";
 
-type MenuItem = {
-  id: number;
-  name: string;
-  description: string;
-  price: string;
-  is_available: boolean;
-};
-
 export default function Home() {
-  const [menu, setMenu] = useState<MenuItem[]>([]);
-  const [loading, setLoading] = useState(true);
-
   return (
     <main className="min-h-screen bg-gradient-to-br from-[#f8ede3] via-[#f5e6ca] to-[#e4c59e] flex flex-col">
       {/* Navigation Bar */}
@@ -40,6 +28,30 @@ export default function Home() {
             </Link>
             <button className="bg-[#7c5e3c] hover:bg-[#a68a64] text-white font-bold px-10 py-4 rounded-full shadow-xl text-lg transition-all duration-200">Order Now</button>
           </div>
+        </div>
+      </section>
+
+      {/* About & Location Section */}
+      <section className="max-w-4xl mx-auto py-16 px-4 flex flex-col md:flex-row items-center gap-10">
+        <div className="flex-1">
+          <h2 className="text-3xl font-bold text-[#7c5e3c] mb-4 font-serif">About Calle Aroma</h2>
+          <p className="text-[#a68a64] mb-4 text-lg">
+            Calle Aroma is more than just a coffee shop—it&apos;s a cozy haven for coffee lovers and friends. Our mission is to serve the finest brews, delicious pastries, and create a welcoming space for the community. Whether you&apos;re here to work, relax, or catch up, you&apos;ll always find a warm smile and the aroma of freshly ground beans.
+          </p>
+          <p className="text-[#a68a64] text-lg">
+            <span className="font-semibold">Open Hours:</span> Mon–Sat: 7am–8pm, Sun: 8am–6pm
+          </p>
+        </div>
+        <div className="flex-1 flex flex-col items-center">
+          <h3 className="text-xl font-semibold text-[#7c5e3c] mb-2">Visit Us</h3>
+          <p className="text-[#a68a64] mb-2">123 Coffee Lane, Brewtown</p>
+          <iframe
+            title="Calle Aroma Location"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=121.0000%2C14.5000%2C121.0100%2C14.5100&amp;layer=mapnik"
+            className="w-full h-48 rounded-lg border-2 border-[#e4c59e] shadow"
+            allowFullScreen
+            loading="lazy"
+          ></iframe>
         </div>
       </section>
 
